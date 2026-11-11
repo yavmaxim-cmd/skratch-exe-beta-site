@@ -3,20 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Бета SKRATCH.EXE для Windows x64. Скретчинг мышью, MIDI и VST3 для FL Studio.">
+<meta name="description" content="Бета SKRATCH.EXE для Windows x64. Скретчинг мышью и геймпадом, MIDI и VST3 для FL Studio.">
 <title>SKRATCH.EXE — Скачать бету</title>
+<link rel="canonical" href="https://yavmaxim-cmd.github.io/skratch-exe-beta-site/">
+<link rel="alternate" hreflang="ru" href="https://yavmaxim-cmd.github.io/skratch-exe-beta-site/">
+<link rel="alternate" hreflang="en" href="https://yavmaxim-cmd.github.io/skratch-exe-beta-site/en.html">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="window">
   <header class="titlebar"><span><b class="app-icon" aria-hidden="true">S</b> SKRATCH.EXE</span><span class="window-kind">Центр загрузки</span></header>
-  <nav aria-label="Разделы"><a href="#download">Загрузка</a><a href="#preview">Интерфейс</a><a href="#start">Установка</a></nav>
+  <div class="navigation">
+    <nav aria-label="Разделы"><a href="#download">Загрузка</a><a href="#preview">Интерфейс</a><a href="#start">Установка</a><a href="#gamepad">Геймпад</a></nav>
+    <nav class="languages" aria-label="Язык"><a href="./" lang="ru" hreflang="ru" aria-label="Русский" aria-current="page">RU</a><a href="en.html" lang="en" hreflang="en" aria-label="English">EN</a></nav>
+  </div>
   <main>
     <section class="hero" id="download" aria-labelledby="name">
       <div class="intro">
         <p class="version"><span aria-hidden="true"></span> 0.9.0-beta <b>WINDOWS x64</b></p>
         <h1 id="name">SKRATCH<span>.EXE</span></h1>
-        <p class="summary">Виниловый скретчинг для FL Studio. Загрузи свой сэмпл, крути пластинку мышью и режь звук кроссфейдером.</p>
+        <p class="summary">Виниловый скретчинг для FL Studio. Загрузи свой сэмпл, крути пластинку мышью или геймпадом и режь звук кроссфейдером.</p>
         <div class="actions">
           <a class="button primary" href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/download/v0.9.0-beta.1/SKRATCH-EXE-0.9.0-beta-86e2251-Windows-x64-Setup.exe"><span aria-hidden="true">↓</span> Скачать установщик</a>
           <a class="button" href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/download/v0.9.0-beta.1/SKRATCH-EXE-0.9.0-beta-86e2251-Windows-x64-Portable.zip">Скачать ZIP</a>
@@ -40,8 +46,16 @@
         <div><h3>03 / Скретчинг</h3><p>Перетаскивай винил мышью или удерживай <kbd>A</kbd> / <kbd>D</kbd>. <kbd>J</kbd> закрывает фейдер на время нажатия, <kbd>C</kbd> возвращает к cue.</p></div>
       </div>
     </section>
+    <section class="pane guide" id="gamepad">
+      <div class="bar"><h2>Скретчинг с геймпада</h2></div>
+      <div class="instructions">
+        <div><h3>Подключение</h3><p>Открой <strong>Input Mapping</strong>, нажми <strong>RESCAN</strong>, выбери контроллер и включи <strong>ENABLE GAMEPAD</strong>.</p></div>
+        <div><h3>Стики и триггеры</h3><p>В раскладке XInput левый стик вверх и вниз двигает пластинку, правый стик влево и вправо управляет кроссфейдером. <kbd>LT</kbd> и <kbd>RT</kbd> замедляют и ускоряют скретч.</p></div>
+        <div><h3>Калибровка</h3><p>Для PlayStation, Mobapad и других HID-контроллеров, которые видит плагин, назначь оси вручную и откалибруй их через <strong>CAL CENTER</strong>, <strong>CAL MIN</strong> и <strong>CAL MAX</strong>.</p></div>
+      </div>
+    </section>
   </main>
-  <footer><span class="status"><span aria-hidden="true"></span> Сборка <code>86e2251</code></span><div><a href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/download/v0.9.0-beta.1/SKRATCH-EXE-0.9.0-beta-86e2251-Source.zip">Исходники</a><a href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/download/v0.9.0-beta.1/SHA256SUMS.txt">SHA-256</a></div></footer>
+  <footer><span class="status"><span aria-hidden="true"></span> Сборка <code>86e2251</code></span><div class="footer-links"><a href="https://github.com/yavmaxim-cmd/skratch-exe">Плагин на GitHub</a><a href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site">Код сайта</a><a href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/tag/v0.9.0-beta.1">Бета-релиз</a><a href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/download/v0.9.0-beta.1/SKRATCH-EXE-0.9.0-beta-86e2251-Source.zip">Архив исходников</a><a href="https://github.com/yavmaxim-cmd/skratch-exe-beta-site/releases/download/v0.9.0-beta.1/SHA256SUMS.txt">SHA-256</a></div></footer>
 </div>
 </body>
 </html>
